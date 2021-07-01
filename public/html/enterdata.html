@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>P.S. BHOODA KAIMOR/New Student</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        .nav {
+            margin: 0;
+        }
+
+        #maincontent {
+            padding-top: 20px;
+        }
+
+        label {
+            cursor: pointer;
+        }
+        textarea{
+            width: 15rem;
+            height: 5rem;
+        }
+        /* input{
+            width: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <span id="time" class="header"></span>
+            <span id="plus" class="header">A+</span>
+            <span id="reset" class="header">Reset</span>
+            <span id="minus" class="header">A-</span>
+        </div>
+    </header>
+    <section id="maincontent">
+        <nav>
+            <ul class="nav">
+                <li><a href="mainpage.html" class="links">Home</a></li>
+                <li><a class="links dropdownList" style="cursor: default;">Class</a>
+                    <div class="dropcontent">
+                        <a href="class1" class="links">Class 1</a>
+                        <a href="class2" class="links">Class 2</a>
+                        <a href="class3" class="links">Class 3</a>
+                        <a href="class4" class="links">Class 4</a>
+                        <a href="class5" class="links">Class 5</a>
+                    </div>
+                </li>
+                <li><a class="links dropdownList" style="cursor: default;">Login</a>
+                    <div class="dropcontent">
+                        <a href="teacherlogin.html" class="links">Teacher Login</a>
+                        <a href="studentlogin.html" class="links">Student Login</a>
+                    </div>
+                </li>i>
+                <li><a href="" class="links">Admission</a></li>
+            </ul>
+        </nav>
+        <section class="section">
+            <h1>Class</h1>
+            <table>
+                <form method='get' onsubmit = 'return(validate());'>
+                    <tr>
+                        <td><label for="srno">Sr. No.</label></td>
+                        <td><input type="number" id="srno" name="srno" placeholder="SrNo of Student"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="dob">Date of Birth</label></td>
+                        <td><input type="date" name="dob" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="Name of Student"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="moname">Mother's Name</label></td>
+                        <td><input type="text" id="moname" name="mothername" placeholder="Mother's Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="faname">Father's Name</label></td>
+                        <td><input type="text" id="faname" name="fathername" placeholder="Father's Name">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="adress">Address</label></td>
+                        <td><textarea id="adress" name="address" placeholder="Enter Address Here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Caste</td>
+                        <td>
+                            <input type="radio" id="general" name="caste" value="general">
+                            <label for="general">General</label>
+                            <input type="radio" id="obc" name="caste" value="obc">
+                            <label for="obc">OBC</label>
+                            <input type="radio" id="sc" name="caste" value="sc">
+                            <label for="sc">SC</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="admission">Date of Admission</label></td>
+                        <td><input type="date" name="admissiondate" id="admission"></td>
+                    </tr>
+                   <tr><td colspan="2"><button type="submit">submit</button></td></tr>
+                       
+                </table>
+            </form>
+        </section>
+        <footer>
+            <span> MADE BY @ SURYA PRATAP SINGH | ALL RIGHTS RESERVED </span>
+        </footer>
+</body>
+<script src="../js/java.js"></script>
+
+</html>

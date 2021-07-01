@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>P.S. BHOODA KAIMOR/Gallery</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .nav {
+      margin: 0;
+    }
+
+    #maincontent {
+      padding: 20px;
+    }
+
+    #photo {
+      display: grid;
+      margin: 10px;
+      grid-gap: 20px 20px;
+      grid-template-columns: auto auto auto auto;
+    }
+
+    .photo {
+      background-color: rgb(143, 143, 252);
+      padding: 10px;
+      width: 100%;
+    }
+
+    .photo:hover {
+      background-color: rgb(42, 165, 42);
+      animation-name: photo;
+      animation-duration: 500ms;
+    }
+
+    @keyframes photo {
+      25% {
+        transform: rotate(3deg);
+      }
+
+      75% {
+        transform: rotate(-3deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <span id="time" class="header"></span>
+      <span id="plus" class="header">A+</span>
+      <span id="reset" class="header">Reset</span>
+      <span id="minus" class="header">A-</span>
+    </div>
+  </header>
+  <section id="maincontent">
+    <nav>
+      <ul class="nav">
+        <li><a href="mainpage.html" class="links">Home</a></li>
+        <li><a class="links dropdownList" style="cursor: default;">Class</a>
+          <div class="dropcontent">
+            <a href="class1" class="links">Class 1</a>
+            <a href="class2" class="links">Class 2</a>
+            <a href="class3" class="links">Class 3</a>
+            <a href="class4" class="links">Class 4</a>
+            <a href="class5" class="links">Class 5</a>
+          </div>
+        </li>
+        <li><a class="links dropdownList" style="cursor: default;">Login</a>
+          <div class="dropcontent">
+              <a href="teacherlogin.html" class="links">Teacher Login</a>
+              <a href="studentlogin.html" class="links">Student Login</a>
+          </div>
+      </li>
+        <li><a href="" class="links">Admission</a></li>
+      </ul>
+    </nav>
+    <div id="photo">
+      <img src="../gallery/20180608_133145.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180403_094150.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20170126_111237.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180820_092136.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180413_105332.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180516_125158.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180403_100938.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180516_090413.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180516_090428.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180518_080259.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180518_080802.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180518_080814.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180905_090808.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20180905_092354.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20181116_115846.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20181117_122417.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20181126_095710.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20190802_084207.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20190829_115959.jpg" alt="photo" class="photo" />
+      <img src="../gallery/20200126_104514.jpg" alt="photo" class="photo" />
+    </div>
+  </section>
+    <footer>
+      <span> MADE BY @ SURYA PRATAP SINGH | ALL RIGHTS RESERVED </span>
+    </footer>
+</body>
+<script src="../js/java.js"></script>
+
+</html>

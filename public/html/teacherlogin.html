@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.S. BHOODA KAIMOR/Teachers</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .section {
+            height: auto;
+        }
+
+        fieldset {
+            padding: 2px 50px;
+        }
+
+        #logo {
+         display: inline-block;
+         z-index: -1;
+        }
+
+        table {
+            border-spacing: 0px;
+            border: none;
+        }
+
+        td {
+            border: none;
+            text-align: center;
+            margin: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <span id="time" class="header"></span>
+            <span id="plus" class="header">A+</span>
+            <span id="reset" class="header">Reset</span>
+            <span id="minus" class="header">A-</span>
+        </div>
+    </header>
+    <section id="maincontent">
+        <div class="container">
+            <div class="leftwala">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="mainpage.html" class="links">Home</a></li>
+                        <li><a class="links dropdownList" style="cursor: default;">Class</a>
+                            <div class="dropcontent">
+                                <a href="class1" class="links">Class 1</a>
+                                <a href="class2" class="links">Class 2</a>
+                                <a href="class3" class="links">Class 3</a>
+                                <a href="class4" class="links">Class 4</a>
+                                <a href="class5" class="links">Class 5</a>
+                            </div>
+                        </li>
+                        <li><a class="links dropdownList" style="cursor: default;">Login</a>
+                            <div class="dropcontent">
+                                <a href="teacherlogin.html" class="links">Teacher Login</a>
+                                <a href="studentlogin.html" class="links">Student Login</a>
+                            </div>
+                        </li>
+                        <li><a href="" class="links">Admission</a></li>
+                    </ul>
+                </nav>
+                <section>
+                    <div class="section">
+                        <fieldset>
+                            <legend>प्राथमिक विद्यालय भूड़ा कैमोर</legend>
+                            <div>
+                                <form action="auth" method="GET" style="display: inline-block;">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Name:</td>
+                                                <td><input type="text" placeholder="Enter Your Name" name="name"required></td>
+                                            </tr>
+                                            <tr>
+                                                <td> Password: </td>
+                                                <td><input type="password" placeholder="Enter Password" name="password"required>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button type="submit">Submit</button>
+                                    <button type="reset">Reset</button>
+                                </form>
+                                <img src="https://tennews.in/wp-content/uploads/2019/06/download-1.jpg" alt="img" id="logo">
+                            </div>
+                        </fieldset>
+                    </div>
+                </section>
+            </div>
+            <aside>
+                <div class="aside">
+
+                    <a href="gallery.html" id="gallery" class="implinks">
+                        <h3>Gallery</h3>
+                        <ul id="images">
+                            <li><img src="../gallery/20170126_111237.jpg" alt="img" class="img"></li>
+                            <li><img src="../gallery/20180403_094150.jpg" alt="img" class="img"></li>
+                            <li><img src="../gallery/20180403_100938.jpg" alt="img" class="img"></li>
+                            <li><img src="../gallery/20180413_105332.jpg" alt="img" class="img"></li>
+                            <li><img src="../gallery/20180518_080259.jpg" alt="img" class="img"></li>
+                        </ul>
+
+                    </a>
+                    <div id="implinks">
+                        <h3>
+                            !! IMPORTANT LINKS !!
+                        </h3>
+                        <ul>
+                            <li><a href="https://prernaup.in/" target="_blank" class="implinks">PRERNA</a></li>
+                            <li><a href="https://diksha.gov.in/" target="_blank" class="implinks">DIKSHA</a></li>
+                            <li><a href="https://pilibhit.nic.in/" target="_blank" class="implinks">PILIBHIT</a></li>
+                            <li><a href="https://www.education.gov.in/hi" target="_blank" class="implinks">H.R.D.
+                                    MINISTRY</a></li>
+                            <li><a href="http://up.gov.in/allsites.aspx" target="_blank" class="implinks">U.P.
+                                    GOVERNMENT</a></li>
+                            <li><a href="https://upefa.com/upefaweb/" target="_blank" class="implinks">U.P. BASIC
+                                    EDUCATON</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <span>
+            MADE BY @ SURYA PRATAP SINGH | ALL RIGHTS RESERVED
+        </span>
+    </footer>
+</body>
+<script src="../js/java.js"></script>
+
+</html>

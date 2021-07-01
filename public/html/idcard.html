@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student ID</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .leftwala {
+            width: 100%;
+        }
+
+        /* #maincontent{
+            background-image: linear-gradient(purple,rgb(255, 255, 255));
+        } */
+        .idcard {
+            /* border: 2px solid blue; */
+            /* background-image:  */
+            background-color: rgba(255, 255, 255, 0.562);
+            box-shadow: 11px 11px 11px 1px rgb(53, 53, 53);
+            width: 430px;
+            margin: 20px auto;
+            padding: 25px 34px;
+            border-radius: 20px;
+        }
+
+        #merilist {
+            display: flex;
+            flex-direction: row;
+        }
+
+        li {
+            padding: 2px 0px;
+        }
+
+        #content {
+            flex: 3;
+        }
+
+        #photo {
+            background-color: rgba(0, 0, 0, 0.308);
+            width: 100px;
+            height: 110px;
+            flex: 1;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <span id="time" class="header"></span>
+            <span id="plus" class="header">A+</span>
+            <span id="reset" class="header">Reset</span>
+            <span id="minus" class="header">A-</span>
+        </div>
+    </header>
+    <section id="maincontent">
+        <div class="container">
+            <div class="leftwala">
+                <nav>
+                    <ul class="nav">
+                        <li><a href="mainpage.html" class="links">Home</a></li>
+                        <li><a class="links dropdownList" style="cursor: default;">Class</a>
+                            <div class="dropcontent">
+                                <a href="class1" class="links">Class 1</a>
+                                <a href="class2" class="links">Class 2</a>
+                                <a href="class3" class="links">Class 3</a>
+                                <a href="class4" class="links">Class 4</a>
+                                <a href="class5" class="links">Class 5</a>
+                            </div>
+                        </li>
+                        <li><a class="links dropdownList" style="cursor: default;">Login</a>
+                            <div class="dropcontent">
+                                <a href="teacherlogin.html" class="links">Teacher Login</a>
+                                <a href="studentlogin.html" class="links">Student Login</a>
+                            </div>
+                        </li>
+                        <li><a href="" class="links">Admission</a></li>
+                    </ul>
+                </nav>
+                <section class="idcard">
+                    <ul id="merilist">
+                        <div id="content">
+                            <li>Sr No :</li>
+                            <li>Name :</li>
+                            <li>Class :</li>
+                            <li>Gender :</li>
+                            <li>Date of Birth :</li>
+                            <li>Mother's Name :</li>
+                            <li>Father's Name :</li>
+                            <li>Admission Date:</li>
+                            <li>Address :</li>
+                        </div>
+                        <div id="photo"></div>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>
+            MADE BY @ SURYA PRATAP SINGH | ALL RIGHTS RESERVED
+        </span>
+    </footer>
+</body>
+<script src="../js/java.js"></script>
+
+</html>
